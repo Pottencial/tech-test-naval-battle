@@ -1,4 +1,4 @@
-# tech-test
+# Tech test - Batalha Naval
 
 Você **não poderá usar bibliotecas externas** ou ferramentas para propósito de criação ou teste. Especificamente, você poderá usar bibliotecas de testes unitários ou ferramentas de build disponíveis para a linguagem que você escolher (por exemplo, Nunit, MSTest, etc).
 
@@ -7,24 +7,22 @@ Você **não poderá usar bibliotecas externas** ou ferramentas para propósito 
  Não é necessário que você trabalhe nos mínimos detalhes da solução, porém estaremos procurando algo mais que somente o esqueleto do código.
 
 O programa deve ser escrito usando o desenvolvimento orientado a testes, seguindo as etapas de refatoração vermelhas e verdes.
-Não sacrifique TDD para completar a solução, isso resultará em uma falha.
+**Não sacrifique TDD para completar a solução**, isso resultará em uma falha.
 Avaliaremos uma variedade de aspectos, como design da solução, SOLID e orientação a objeto. Mesmo que estes problemas não sejam extensos, nós esperamos que você encaminhe um código que acredite ser de qualidade, um código possível de ser rodado e evoluído.
 
 ## Introdução:
-
- - Deve haver uma maneira de prover um arquivo como entrada de dados para a aplicação
+ - Deve haver uma maneira de prover as entradas de dados para a aplicação (seja arquivo ou input via console)
  - A aplicação deve executar
  - Realize um fork do projeto
- - Adicione @pottencial (Pottencial Seguradora) como membro do seu fork. Você pode fazer isto em  https://gitlab.com/`your-user`/tech-test-train/settings/members
  - Quando você começar, faça um commit vazio com a mensagem "Iniciando o teste de tecnologia" e quando terminar, faça o commit com uma mensagem "Finalizado o teste de tecnologia".
  - Commit após cada ciclo de refatoração pelo menos.
- - Não use branches.
+ - Não use branches - deixe o código na master.
  - Tente não gastar mais de 3 horas para concluir o teste técnico.
  - Você deve prover evidências suficientes de que sua solução está completa indicando, no mínimo, que ela funciona utilizando os dados de teste que são fornecidos
   
  
 ## Problema
-Cada jogador deve dispor de uma área de 10x10 onde ele vai posicionar 5 navios de tamanhos diferentes: um porta-aviões (comprimento 5), um encouraçado (comprimento 4), um submarino e um destroyer (ambom de comprimento 3), e barco de patrulha (comprimento 2). Um jogador nunca deve saber a posição dos navios do oponente. Os navios de um mesmo jogador não podem se cruzar e devem estar dentro das fronteiras da sua área disponível.
+Cada jogador deve dispor de uma área de 10x10 onde ele vai posicionar 5 navios de tamanhos diferentes: um porta-aviões (comprimento 5), um encouraçado (comprimento 4), um submarino e um destroyer (comprimento 3), e barco de patrulha (comprimento 2). Um jogador nunca deve saber a posição dos navios do oponente. Os navios de um mesmo jogador não podem se cruzar e devem estar dentro das fronteiras da sua área disponível.
 
 Depois que todas as peças estão posicionadas, os jogadores se alternam em turnos para lançar bombas sobre o outro oponente especificando qual posição ele deseja atacar. Se algum dos navios do jogador que está sendo atacado estiver na posição atacada, considera-se que o navio foi atingido. O ataque falha se o atacante lançar uma bomba em um local onde não existe nenhum navio do oponente.
 
